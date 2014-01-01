@@ -1,0 +1,75 @@
+.row
+  .col-md-3
+    .page-header
+      %h4
+        My Lists
+
+    #accordion.panel-group
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseOne"}
+              Weekly
+        #collapseOne.panel-collapse.collapse.in
+          .panel-body
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseTwo"}
+              Monthly
+        #collapseTwo.panel-collapse.collapse
+          .panel-body
+      .panel.panel-default
+        .panel-heading
+          %h4.panel-title
+            %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseThree"}
+              Current
+        #collapseThree.panel-collapse.collapse
+          .panel-body
+
+  .col-md-9
+    .page-header
+      %h4
+        All Products
+    .row
+      .col-md-4.product-thumbnail
+        .thumbnail
+          %img{alt: "...", "src" => "assets/stock.jpg"}/
+          .caption
+            %h3 Product 1
+            %div 
+              DescriptionDescriptionDescription
+            %p
+              %a.btn.btn-primary{href: "#", role: "button"} Add
+      .col-md-4.product-thumbnail
+        .thumbnail
+          %img{alt: "...", "src" => "assets/stock.jpg"}/
+          .caption
+            %h3 Product 2
+            %p Description
+            %p
+              %a.btn.btn-primary{href: "#", role: "button"} Add
+      .col-md-4.product-thumbnail
+        .thumbnail
+          %img{alt: "...", "src" => "assets/stock.jpg"}/
+          .caption
+            %h3 Product 3
+            %p Description
+            %p
+              %a.btn.btn-primary{href: "#", role: "button"} Add
+      .col-md-4.product-thumbnail
+        .thumbnail
+          %img{alt: "...", "src" => "assets/stock.jpg"}/
+          .caption
+            %h3 Product 4
+            %p Description
+            %p
+              %a.btn.btn-primary{href: "#", role: "button"} Add
+      .col-md-4.product-thumbnail
+        .thumbnail
+          %img{alt: "...", "src" => "assets/stock.jpg"}/
+          .caption
+            %h3 Product 5
+            %p Description
+            %p
+              %a.btn.btn-primary{href: "#", role: "button"} Add
